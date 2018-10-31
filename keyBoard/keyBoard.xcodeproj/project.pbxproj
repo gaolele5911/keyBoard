@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		18468FA921894C81006D153D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18468FA821894C81006D153D /* AppDelegate.m */; };
-		18468FAC21894C81006D153D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18468FAB21894C81006D153D /* ViewController.m */; };
 		18468FAF21894C81006D153D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18468FAD21894C81006D153D /* Main.storyboard */; };
 		18468FB121894C81006D153D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18468FB021894C81006D153D /* Assets.xcassets */; };
 		18468FB421894C81006D153D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18468FB221894C81006D153D /* LaunchScreen.storyboard */; };
 		18468FB721894C81006D153D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18468FB621894C81006D153D /* main.m */; };
+		18468FC221894ED2006D153D /* keyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 18468FC121894ED1006D153D /* keyBoard.m */; };
+		18468FC521894EDC006D153D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18468FC321894EDC006D153D /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18468FA421894C81006D153D /* keyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18468FA721894C81006D153D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18468FA821894C81006D153D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18468FAA21894C81006D153D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18468FAB21894C81006D153D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18468FAE21894C81006D153D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18468FB021894C81006D153D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18468FB321894C81006D153D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18468FB521894C81006D153D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18468FB621894C81006D153D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18468FC021894ED1006D153D /* keyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyBoard.h; sourceTree = "<group>"; };
+		18468FC121894ED1006D153D /* keyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keyBoard.m; sourceTree = "<group>"; };
+		18468FC321894EDC006D153D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "../../../自定义键盘/自定义键盘/ViewController.m"; sourceTree = "<group>"; };
+		18468FC421894EDC006D153D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "../../../自定义键盘/自定义键盘/ViewController.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +61,11 @@
 		18468FA621894C81006D153D /* keyBoard */ = {
 			isa = PBXGroup;
 			children = (
+				18468FBD21894EC9006D153D /* IQKeyboardManager */,
 				18468FA721894C81006D153D /* AppDelegate.h */,
 				18468FA821894C81006D153D /* AppDelegate.m */,
-				18468FAA21894C81006D153D /* ViewController.h */,
-				18468FAB21894C81006D153D /* ViewController.m */,
+				18468FC421894EDC006D153D /* ViewController.h */,
+				18468FC321894EDC006D153D /* ViewController.m */,
 				18468FAD21894C81006D153D /* Main.storyboard */,
 				18468FB021894C81006D153D /* Assets.xcassets */,
 				18468FB221894C81006D153D /* LaunchScreen.storyboard */,
@@ -69,6 +73,31 @@
 				18468FB621894C81006D153D /* main.m */,
 			);
 			path = keyBoard;
+			sourceTree = "<group>";
+		};
+		18468FBD21894EC9006D153D /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				18468FC021894ED1006D153D /* keyBoard.h */,
+				18468FC121894ED1006D153D /* keyBoard.m */,
+				18468FBE21894EC9006D153D /* IQTextView */,
+				18468FBF21894EC9006D153D /* IQToolbar */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		18468FBE21894EC9006D153D /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		18468FBF21894EC9006D153D /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IQToolbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18468FAC21894C81006D153D /* ViewController.m in Sources */,
 				18468FB721894C81006D153D /* main.m in Sources */,
+				18468FC221894ED2006D153D /* keyBoard.m in Sources */,
 				18468FA921894C81006D153D /* AppDelegate.m in Sources */,
+				18468FC521894EDC006D153D /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +309,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2YQ5VQATP;
 				INFOPLIST_FILE = keyBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.keyBoard";
+				PRODUCT_BUNDLE_IDENTIFIER = qunsheng.com.jinyuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -292,9 +323,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y2YQ5VQATP;
 				INFOPLIST_FILE = keyBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-23.keyBoard";
+				PRODUCT_BUNDLE_IDENTIFIER = qunsheng.com.jinyuan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
